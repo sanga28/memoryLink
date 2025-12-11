@@ -1,0 +1,266 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2884c6;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navbar Links Container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Common Button Style for Navbar */
+.nav-btn,
+.nav-link-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Hover Styles */
+.nav-btn:hover,
+.nav-link-btn:hover {
+  background-color: white;
+  color: #2884c6;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+}
+
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Features */
+.features {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+  color: #2884c6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.feature-card {
+  background: #2884c6;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About */
+.about {
+  padding: 4rem 2rem;
+  background-color: #32abfc;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.about h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-list {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+  color: #333;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-list li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-left: 5px solid #2884c6;
+  border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  color: #2884c6;
+}
+
+/* Footer */
+.footer {
+  background-color: #c6ced4;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.dashboard {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9fbfc;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  color: #2884c6;
+}
+
+.dashboard-back-btn {
+  color: #2884c6;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #c9eaff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.dashboard-back-btn:hover {
+  background-color: #d0e8f8;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dashboard-card {
+  background-color: #2884c6;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: #2884c6;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: #e0e0e0;
+}
